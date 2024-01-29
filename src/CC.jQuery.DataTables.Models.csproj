@@ -10,6 +10,8 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/chrcar01/CC.jQuery.DataTables.Models</PackageProjectUrl>
     <RepositoryUrl>https://github.com/chrcar01/CC.jQuery.DataTables.Models</RepositoryUrl>
+    <Authors>chrcar01</Authors>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
