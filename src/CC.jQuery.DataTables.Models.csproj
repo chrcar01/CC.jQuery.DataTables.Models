@@ -4,8 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Title>CC.jQuery.DataTables.Models</Title>
     <Description>Set of models that map to the jQuery DataTables ajax payloads.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/chrcar01/CC.jQuery.DataTables.Models</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/chrcar01/CC.jQuery.DataTables.Models</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -19,7 +23,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="https:\github.com\chrcar01\CC.jQuery.DataTables.Models" />
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
