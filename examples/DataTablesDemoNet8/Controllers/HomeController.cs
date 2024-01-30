@@ -17,12 +17,7 @@ public class HomeController(IEmployeeRepository employeeRepo) : Controller
 
     [HttpPost("api/employees")]
     public ActionResult GetPage(DataTableRequest request) => Json(_employeeRepo.GetPage(request));
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
+    
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
