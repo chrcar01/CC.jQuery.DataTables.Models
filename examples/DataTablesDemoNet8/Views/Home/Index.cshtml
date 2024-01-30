@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <table id="employees" class="display">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Title</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+@section Scripts{
+    <script>
+        $(function() {
+            $('table#employees').DataTable({
+                serverSide: true,
+                processing: true,
+                ajax: {
+                    type: 'POST',
+                    url: '/api/employees'
+                },
+                columns: [
+                    { data: 'id', name: 'id' },
+                    { data: 'firstName', name: 'firstName' },
+                    { data: 'lastName', name: 'lastName' },
+                    { data: 'title', name: 'title' },
+                    { data: 'email', name: 'email' }
+                ]
+            });
+        })
+    </script>   
+}
